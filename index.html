@@ -90,6 +90,27 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
     }
+    .gradeInstrumentos {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cartaoInstrumento {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: transform 0.3 ease;
+    }
+    .cartaoInstrumento:hover{
+      transform: translateY(-5px);
+    }
+    .nomeInstrumento {
+      color: #333333
+    }
   </style>
 </head>
 
@@ -153,39 +174,42 @@
       </div>
       </section>
     <!-- Seção Instrumentos -->
-    <section id="instrumentos"> 
-      <h2>Cátalogo</h2>
-      <article>
-        <h3>Guitarra elétrica StratoCaster</h3>
-        <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02"
-          alt="Imagem da Guitarra Elétrica StratoCaster" width="300">
-        <p>
-          <strong>Marca:</strong>Fender
-        </p>
-        <p>
-          Guitarra clássica de alta performace, ideal para rock e blues.
-        </p>
-        <p>
-          <em>Preço: R$ 3.500,00</em>
-        </p>
-        <a href="#">Adicionar ao carrinho</a>
-      </article>
-
-      <article>
-        <h3>Kit Bateria</h3>
-        <img src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b" alt="Imagem do Kit de Bateria"
-          width="300">
-        <p>
-          <strong>Marca:</strong>pearl
-        </p>
-        <p>
-          Kit de Bateria preto e branco e Roxo ideal para você
-        </p>
-        <p>
-          <em>Preço: R$ 13.900,00</em>
-        </p>
-        <a href="#">Adicionar ao carrinho</a>
-      </article>
+    <section id="instrumentos" class="container" style="background-color: #eeeeee;"> 
+      <h2 class="tituloSecao">Cátalogo</h2>
+      <div class="gradeInstrumentos">
+        <article class="cartaoInstrumento">
+          <h3 class="nomeInstrumento">Guitarra elétrica StratoCaster</h3>
+          <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02"
+            alt="Imagem da Guitarra Elétrica StratoCaster" width="200" style="border-radius: 4px; margin-bottom: 1rem;">
+            
+          <p>
+            <strong>Marca:</strong>Fender
+          </p>
+          <p>
+            Guitarra clássica de alta performace, ideal para rock e blues.
+          </p>
+          <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+            <em>Preço: R$ 3.500,00</em>
+          </p>
+          <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+        </article>
+  
+        <article class="cartaoInstrumento">
+          <h3 class="nomeInstrumento">Kit Bateria</h3>
+          <img src="https://images.unsplash.com/photo-1568153354382-6bcd1d46568b" alt="Imagem do Kit de Bateria"
+            width="200">
+          <p>
+            <strong>Marca:</strong>pearl
+          </p>
+          <p>
+            Kit de Bateria preto e branco e Roxo ideal para você
+          </p>
+          <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
+            <em>Preço: R$ 13.900,00</em>
+          </p>
+          <a href="#" class="botaoPrincipal">Adicionar ao carrinho</a>
+        </article>
+      </div>
     </section>
 
     <!-- Seção Depoimentos -->
